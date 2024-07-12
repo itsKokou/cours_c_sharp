@@ -1,0 +1,15 @@
+C:\Users\User\OneDrive\Documents\C#\Examen_C#\obj\Debug\Examen_C#.csproj.AssemblyReference.cache
+C:\Users\User\OneDrive\Documents\C#\Examen_C#\obj\Debug\Examen_C_.Properties.Resources.resources
+C:\Users\User\OneDrive\Documents\C#\Examen_C#\obj\Debug\Examen_C#.csproj.GenerateResource.cache
+C:\Users\User\OneDrive\Documents\C#\Examen_C#\obj\Debug\Examen_C#.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive\Documents\C#\Examen_C#\bin\Debug\Examen_C#.exe.config
+C:\Users\User\OneDrive\Documents\C#\Examen_C#\bin\Debug\Examen_C#.exe
+C:\Users\User\OneDrive\Documents\C#\Examen_C#\bin\Debug\Examen_C#.pdb
+C:\Users\User\OneDrive\Documents\C#\Examen_C#\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\User\OneDrive\Documents\C#\Examen_C#\bin\Debug\System.Data.SqlClient.dll
+C:\Users\User\OneDrive\Documents\C#\Examen_C#\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\User\OneDrive\Documents\C#\Examen_C#\bin\Debug\System.Data.SqlClient.xml
+C:\Users\User\OneDrive\Documents\C#\Examen_C#\obj\Debug\Examen_C_.front.views.FormView.resources
+C:\Users\User\OneDrive\Documents\C#\Examen_C#\obj\Debug\Examen_C#.csproj.CopyComplete
+C:\Users\User\OneDrive\Documents\C#\Examen_C#\obj\Debug\Examen_C#.exe
+C:\Users\User\OneDrive\Documents\C#\Examen_C#\obj\Debug\Examen_C#.pdb

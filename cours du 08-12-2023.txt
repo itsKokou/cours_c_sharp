@@ -1,0 +1,5 @@
+Pour event : 
+-Declarer l'event dans la vue 
+-Le poser sur le composeur graphique qui declenche l'event : activerrr
+-Dans le presenter, definir le callBack
+-Puis definir une methode qui le rattache au invoke de la vue

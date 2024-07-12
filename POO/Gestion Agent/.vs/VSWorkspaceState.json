@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Gestion Agent",
+    "\\Gestion Agent\\core",
+    "\\Gestion Agent\\core\\impl",
+    "\\Gestion Agent\\data",
+    "\\Gestion Agent\\data\\dto",
+    "\\Gestion Agent\\data\\repository"
+  ],
+  "SelectedNode": "\\Gestion Agent\\core\\impl\\DataBase.cs",
+  "PreviewInSolutionExplorer": false
+}

@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5CB37912-B9F8-41F1-BAC8-C7DB0D09C7D5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Gestion_Cours</RootNamespace>
+    <AssemblyName>Gestion_Cours</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ControlzEx, Version=4.0.0.0, Culture=neutral, PublicKeyToken=69f1c32f803d307e, processorArchitecture=MSIL">
+      <HintPath>packages\ControlzEx.4.4.0\lib\net462\ControlzEx.dll</HintPath>
+    </Reference>
+    <Reference Include="MahApps.Metro.IconPacks.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0c0d510f9915137a, processorArchitecture=MSIL">
+      <HintPath>packages\MahApps.Metro.IconPacks.Material.4.11.0\lib\net47\MahApps.Metro.IconPacks.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MahApps.Metro.IconPacks.Material, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0c0d510f9915137a, processorArchitecture=MSIL">
+      <HintPath>packages\MahApps.Metro.IconPacks.Material.4.11.0\lib\net47\MahApps.Metro.IconPacks.Material.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin, Version=4.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Owin.4.2.2\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xaml.Behaviors, Version=1.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Xaml.Behaviors.Wpf.1.1.19\lib\net45\Microsoft.Xaml.Behaviors.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework.Aero2, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\PresentationFramework.Aero2.1.0.1\lib\PresentationFramework.Aero2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Configuration.ConfigurationManager.8.0.0\lib\net462\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.1.6, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Data.SqlClient.4.8.6\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.TypeExtensions, Version=4.1.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Reflection.TypeExtensions.4.7.0\lib\net461\System.Reflection.TypeExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Windows.Forms.DataVisualization.Design" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Xceed.Wpf.AvalonDock, Version=4.6.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>packages\Extended.Wpf.Toolkit.4.6.0\lib\net40\Xceed.Wpf.AvalonDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Aero, Version=4.6.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>packages\Extended.Wpf.Toolkit.4.6.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.Aero.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Metro, Version=4.6.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>packages\Extended.Wpf.Toolkit.4.6.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.VS2010, Version=4.6.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>packages\Extended.Wpf.Toolkit.4.6.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.VS2010.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>packages\Extended.Wpf.Toolkit.4.6.0\lib\net40\Xceed.Wpf.Toolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="front\views\Page2\ClassePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="front\views\Page2\CoursPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="front\views\page\ClasseAddPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="front\views\page\ClassePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="front\views\page\CoursAddPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="front\views\page\CoursPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="front\views\page\LoginPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="front\views\page\ModulePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="front\views\page\ProfesseurAddPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="front\views\page\ProfesseurPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="front\views\page\SallePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="front\views\window\ClasseWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="front\views\window\CoursClasseWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="front\views\window\ModuleWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="back\core\IBaseRepository.cs" />
+    <Compile Include="back\core\IBaseService.cs" />
+    <Compile Include="back\core\IDataBase.cs" />
+    <Compile Include="back\core\impl\CustomTimePicker.cs" />
+    <Compile Include="back\core\impl\DataBase.cs" />
+    <Compile Include="back\core\IRepository.cs" />
+    <Compile Include="back\data\dto\ClasseEnseigneeDto.cs" />
+    <Compile Include="back\data\dto\CoursDto.cs" />
+    <Compile Include="back\data\dto\CoursDto4Attributs.cs" />
+    <Compile Include="back\data\dto\CoursDto5Attributs.cs" />
+    <Compile Include="back\data\dto\UserDto.cs" />
+    <Compile Include="back\data\entities\Classe.cs" />
+    <Compile Include="back\data\entities\Cours.cs" />
+    <Compile Include="back\data\entities\Enseignement.cs" />
+    <Compile Include="back\data\entities\Filiere.cs" />
+    <Compile Include="back\data\entities\Module.cs" />
+    <Compile Include="back\data\entities\Niveau.cs" />
+    <Compile Include="back\data\entities\Professeur.cs" />
+    <Compile Include="back\data\entities\Role.cs" />
+    <Compile Include="back\data\entities\Salle.cs" />
+    <Compile Include="back\data\entities\User.cs" />
+    <Compile Include="back\data\enums\RepositoryName.cs" />
+    <Compile Include="back\data\enums\ServiceName.cs" />
+    <Compile Include="back\data\repositories\FabriqueRepository.cs" />
+    <Compile Include="back\data\repositories\IClasseRepository.cs" />
+    <Compile Include="back\data\repositories\ICoursRepository.cs" />
+    <Compile Include="back\data\repositories\IFiliereRepository.cs" />
+    <Compile Include="back\data\repositories\IModuleRepository.cs" />
+    <Compile Include="back\data\repositories\impl\ClasseRepository.cs" />
+    <Compile Include="back\data\repositories\impl\CoursRepository.cs" />
+    <Compile Include="back\data\repositories\impl\FiliereRepository.cs" />
+    <Compile Include="back\data\repositories\impl\ModuleRepository.cs" />
+    <Compile Include="back\data\repositories\impl\NiveauRepository.cs" />
+    <Compile Include="back\data\repositories\impl\ProfesseurRepository.cs" />
+    <Compile Include="back\data\repositories\impl\SalleRepository.cs" />
+    <Compile Include="back\data\repositories\impl\UserRepository.cs" />
+    <Compile Include="back\data\repositories\INiveauRepository.cs" />
+    <Compile Include="back\data\repositories\IProfesseurRepository.cs" />
+    <Compile Include="back\data\repositories\ISalleRepository.cs" />
+    <Compile Include="back\data\repositories\IUserRepository.cs" />
+    <Compile Include="back\services\FabriqueService.cs" />
+    <Compile Include="back\services\IClasseService.cs" />
+    <Compile Include="back\services\ICoursService.cs" />
+    <Compile Include="back\services\IModuleService.cs" />
+    <Compile Include="back\services\impl\ClasseService.cs" />
+    <Compile Include="back\services\impl\CoursService.cs" />
+    <Compile Include="back\services\impl\ModuleService.cs" />
+    <Compile Include="back\services\impl\ProfesseurService.cs" />
+    <Compile Include="back\services\impl\SalleService.cs" />
+    <Compile Include="back\services\impl\UserService.cs" />
+    <Compile Include="back\services\IProfesseurService.cs" />
+    <Compile Include="back\services\ISalleService.cs" />
+    <Compile Include="back\services\IService.cs" />
+    <Compile Include="back\services\IUserService.cs" />
+    <Compile Include="front\views\IClasseAddPage.cs" />
+    <Compile Include="front\views\IClassePage.cs" />
+    <Compile Include="front\views\IClasseWindow.cs" />
+    <Compile Include="front\views\ICoursAddPage.cs" />
+    <Compile Include="front\views\ICoursClasseWindow.cs" />
+    <Compile Include="front\views\ICoursPage.cs" />
+    <Compile Include="front\views\ILoginPage.cs" />
+    <Compile Include="front\views\IMainWindows.cs" />
+    <Compile Include="front\views\IModulePage.cs" />
+    <Compile Include="front\views\IModuleWindow.cs" />
+    <Compile Include="front\views\IPage.cs" />
+    <Compile Include="front\views\IProfesseurAddPage.cs" />
+    <Compile Include="front\views\IProfesseurPage.cs" />
+    <Compile Include="front\views\ISallePage.cs" />
+    <Compile Include="front\views\Page2\ClassePage.xaml.cs">
+      <DependentUpon>ClassePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="front\views\Page2\CoursPage.xaml.cs">
+      <DependentUpon>CoursPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="front\views\page\ClasseAddPage.xaml.cs">
+      <DependentUpon>ClasseAddPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="front\views\page\ClassePage.xaml.cs">
+      <DependentUpon>ClassePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="front\views\page\CoursAddPage.xaml.cs">
+      <DependentUpon>CoursAddPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="front\views\page\CoursPage.xaml.cs">
+      <DependentUpon>CoursPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="front\views\page\LoginPage.xaml.cs">
+      <DependentUpon>LoginPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="front\views\page\ModulePage.xaml.cs">
+      <DependentUpon>ModulePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="front\views\page\ProfesseurAddPage.xaml.cs">
+      <DependentUpon>ProfesseurAddPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="front\views\page\ProfesseurPage.xaml.cs">
+      <DependentUpon>ProfesseurPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="front\views\page\SallePage.xaml.cs">
+      <DependentUpon>SallePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="front\views\window\ClasseWindow.xaml.cs">
+      <DependentUpon>ClasseWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="front\views\window\CoursClasseWindow.xaml.cs">
+      <DependentUpon>CoursClasseWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="front\views\window\ModuleWindow.xaml.cs">
+      <DependentUpon>ModuleWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="presenter\IClasseAddPagePresenter.cs" />
+    <Compile Include="presenter\IClassePagePresenter.cs" />
+    <Compile Include="presenter\ICoursAddPagePresenter.cs" />
+    <Compile Include="presenter\ICoursPagePresenter.cs" />
+    <Compile Include="presenter\ILoginPagePresenter.cs" />
+    <Compile Include="presenter\IModulePagePresenter.cs" />
+    <Compile Include="presenter\impl\ClasseAddPagePresenter.cs" />
+    <Compile Include="presenter\impl\ClassePagePresenter.cs" />
+    <Compile Include="presenter\impl\CoursAddPagePresenter.cs" />
+    <Compile Include="presenter\impl\CoursPagePresenter.cs" />
+    <Compile Include="presenter\impl\LoginPagePresenter.cs" />
+    <Compile Include="presenter\impl\ModulePagePresenter.cs" />
+    <Compile Include="presenter\impl\PagePresenter.cs" />
+    <Compile Include="presenter\impl\ProfesseurAddPagePresenter.cs" />
+    <Compile Include="presenter\impl\ProfesseurPagePresenter.cs" />
+    <Compile Include="presenter\impl\SallePagePresenter.cs" />
+    <Compile Include="presenter\IPagePresenter.cs" />
+    <Compile Include="presenter\IProfesseurAddPagePresenter.cs" />
+    <Compile Include="presenter\IProfesseurPagePresenter.cs" />
+    <Compile Include="presenter\ISallePagePresenter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="front\images\close.png" />
+    <Resource Include="front\images\Email.png" />
+    <Resource Include="front\images\facebook.png" />
+    <Resource Include="front\images\google.png" />
+    <Resource Include="front\images\linkedin.png" />
+    <Resource Include="front\images\Lock.png" />
+    <Resource Include="front\images\p1.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

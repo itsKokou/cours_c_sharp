@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="front\views\page\ClasseAddPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="front\views\page\ClassePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="front\views\page\LoginPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="front\views\page\ModulePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="front\views\page\Page1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="front\views\page\SallePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MainWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="App.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="front\exemple\ExemplePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="front\views\page\ClasseAddPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="front\views\page\ClassePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="front\views\page\LoginPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="front\views\page\ModulePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="front\views\page\Page1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="front\views\page\SallePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

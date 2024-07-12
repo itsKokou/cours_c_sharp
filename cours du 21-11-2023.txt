@@ -1,0 +1,82 @@
+=======================================================================
+Projet: GESTION DES CONGES 
+
+# Gestion des agents
+  - Agents :  Contractuel(CDD,CDI), Prestataire, Stagiaire
+  - Creation de contrat =>:matricule agent change suivant le contrat
+     -RH : - Collaborateur RH (Crée le contrat)
+           - Manager RH : chef du CRH ( finalise le contrat)
+     -Collaborateur(ROLE) : - visualiser contrat
+     - Manager : -visualiser tout contrat et filtré (etat)
+ NB: *pas plus de 2 contrat stage ni CDD
+     *agent a toujours un chef (n+1)
+     * agent a 24 jours ouvrables de conges/an 
+
+#Gestion des absences 
+  - WorkFlow (Séquence de validation)
+  - demande absence(collaborateur) et valider par n+1: nbre de jours demandés est retiré sur le total annuel; (Au plus l'agent ne peut prendre que 12jrs d'absences au dela c'est retirer l'an prochain)
+NB: certaines absences ne sont pas défalquées {mariage(3jrs),Baptême (1jr), Décès(2jrs),  } 
+   - le n+1 ne voit que les absences de ses n-1
+
+#Gestion des congés que CDI ET CDD
+   -demande absence(collaborateur) valide par n+1
+       
+       -MATERNITE(automatique demande 3 mois avant de partir: 1 mois avant bébé puis 2mois) si bébé, elle se connecte met la date bébé puis le système deduit les 2 mois (24*2)
+          - Collaborateur RH recupe les demandes pour enregistrer
+          - collaborateur RH propose un remplaçant pour cette durée
+		
+        -NORMAL 
+NB: 
+Au minimum 12 jours conges au max le nbre jrs restant
+
+CDI : cumule d'absence ne concerne que lui 
+
+CDD, PRESTATAIRE et Stagiaire ne font pas de demande de conges.
+
+Si absence non justifiée retrait sur salaire(CDD ou PRESTATAIRE) si stagiaire notifier le nbre de jrs puis retrait paie du mois : 
+
+n+1 peut changer la date de depart conges puis le nbre jrs aussi
+
+Tant que le remplacement n'est pas Okay, le congé n'est pas validé au niveau de l'agent CDI mais peut l'être chez le n+1. il voit tjrs la demande 
+
+Si RH fait remplacement avaant Debut conges c'est okay, mais c'est c'est après la demande est retourné au n+1 pour réajustement puis l'agent voit 
+
+Lorsque n+1 part en congés , c'est même chose. Si plus aucun n+1, toutes les demandes sont envoyés à son n+2   
+
+***************Pour prochain cours (agent):
+declarer les fonctions puis leurs impl (gestion agent)
+ - creer un projet WinForm/WPF
+ - dossier data : - model( les entites)
+                  - dto 
+                  - repository
+                       -impl
+                       -interfaces
+ - service : -impl
+             -interfaces
+ - core : - impl: - DataBase.cs
+          -IDataBase.cs
+
+=======================================================================
+C# = application desktop 
+
+On utilisera SQL Server 
+
+========Installer =========================================
+ Visual Studio.net
+ Sql Server + Maagement studio - Authentidation Moteur
+ 
+=============================================================
+  
+NB : En classe on va utiliser WinForm puis le projet on fera du WPF
+
+# Delegate = pointeur sur des fonctions (call back) 
+# garbage collection ou ramasse miette(java) : efface les valeur qui n'ont pas de réference 
+
+# Propriété : le même attribut joue le rôle de getter et setter
+#Une methode Virtual : a du code mais la fille doit redefinir 
+#Une méthode Abstract : juste la signature, la fille doit redefinir 
+# base == parent ou super 
+#Une classe abstract : contient au moins une méthode abstract
+#sealed = classe ne peut pas être héritée (final ) 
+#type(valeur)? == peut prendre null
+#var s : le premier type de s reste son type mais avec dynamic une valeur d'un autre type peut être contenue 
